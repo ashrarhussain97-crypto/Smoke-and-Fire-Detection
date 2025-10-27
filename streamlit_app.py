@@ -56,12 +56,12 @@ if uploaded_file is not None:
     col1, col2 = st.columns(2)
     
     with col1:
-        st.subheader("📸 Uploaded Image")
+        st.subheader("Uploaded Image")
         image = Image.open(uploaded_file)
         st.image(image, use_container_width=True)
     
     with col2:
-        st.subheader("🔍 Analysis Results")
+        st.subheader("Analysis Results")
         
         if model is not None:
             # Preprocess the image
@@ -103,24 +103,24 @@ if uploaded_file is not None:
 
 else:
     # Instructions when no file is uploaded
-    st.info("👆 Please upload an image to begin detection")
+    st.info("Please upload an image to begin detection my brudda")
     
     # Example section
     st.markdown("---")
-    st.subheader("📊 What This App Does")
+    st.subheader("What de App Does")
     col1, col2, col3 = st.columns(3)
     
     with col1:
-        st.markdown("### 🔥 Fire Detection")
+        st.markdown("### Fire and Smoke Detection ")
         st.write("Identifies flames and fire in images")
     
     with col2:
-        st.markdown("### 💨 Smoke Detection")
-        st.write("Detects smoke patterns and haze")
+        st.markdown("### Western Sydney University")
+        st.write("ENGR PRJ")
     
     with col3:
-        st.markdown("### 🎯 High Accuracy")
-        st.write("AI-powered deep learning model")
+        st.markdown("### Ashrar Ibne Hussain")
+        st.write("22135924")
 
 # Footer
 st.markdown("---")
