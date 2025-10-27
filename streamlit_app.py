@@ -34,14 +34,12 @@ with st.sidebar:
     st.header("About")
     st.info(
         "This application uses deep learning to detect fire and smoke in images. "
-        "Upload an image and the AI will analyze it for potential fire hazards."
     )
     st.header("How to Use")
     st.markdown("""
     1. Click 'Browse files' to upload an image
     2. Supported formats: JPG, JPEG, PNG
-    3. Wait for the AI to analyze
-    4. View the prediction results
+    3. View the prediction results
     """)
 
 # File uploader
@@ -103,7 +101,7 @@ if uploaded_file is not None:
 
 else:
     # Instructions when no file is uploaded
-    st.info("Please upload an image to begin detection my brudda")
+    st.info("Please upload an image to begin detection")
     
     # Example section
     st.markdown("---")
