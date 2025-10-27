@@ -23,7 +23,7 @@ def load_model():
         return model
     except Exception as e:
         st.error(f"Error loading model: {str(e)}")
-        st.info("Make sure 'fire_detection_model.h5' is in the 'models/' folder")
+        st.info("")
         return None
 
 # Load the model
